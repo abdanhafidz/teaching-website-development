@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image" href="assets/gambar.jpg">
+        <title>Website Belajar Day 2 - Form</title>
+    </head>
+<body>
+        <h1>Form Biodata</h1>
+        <form method="POST" action="kirim.php" enctype="multipart/form-data" >
+            <label>Nama Lengkap :</label>
+            <input type="text" placeholder="Ketikkan di sini ... " name="nama" required/>
+            <br><br>
+            <label>Tgl Lahir</label>
+            <input type="date" placeholder="Pilih tgl lahir" name="tgl-lahir"/>
+            <br><br>
+            <label>Nomor Telpon</label>
+            <input type="number" placeholder="+62 ..." name="telp"/>
+            <br><br>
+            <label>Alamat Email</label>
+            <input type="email" placeholder="your@mail.com ..." name="email"/>
+            <br><br>
+            <label>Waktu Pesan Makanan</label>
+            <input type="datetime-local" placeholder="+62 ..." name="tgl-jam"/>
+            <br><br>
+            <label>Buat Password</label>
+            <input type="password" placeholder="Buat password" name="sandi" required/>
+            <br><br>
+            <label>Deskripsikan Diri Anda</label> <br>
+            <textarea name="deskripsi" placeholder="deskripsikan diri anda"></textarea>
+            <br><br>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="L"/>L
+            <input type="radio" name="gender" value="P" />P
+            <br><br>
+            <label>Hobi</label>
+            <br>
+            <input type="checkbox" name="hobbi1" /> Berenang <br>
+            <input type="checkbox" name="hobbi2" /> Bersepeda <br>
+            <input type="checkbox" name="hobbi3" /> Berkuda <br>
+            <br><br>
+            <label>Pilih Waifu Anda</label>
+            <br>
+            <select name="waifu">
+                <option value="5000">Tiket 1</option>
+                <option value="10000">Tiket 2</option>
+                <option value="11000">Tiket 3</option>
+            </select>
+            <br>
+            <br>
+            <input type="hidden" value="1" name="id_user" />
+            <input type="file" name="data-file" accept=".xls,.xlsx" />
+            <button type="submit">Kirim Data</button>
+            <br>
+            <hr />
+        </form>
+</body>
+</html>
