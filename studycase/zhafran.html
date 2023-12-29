@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image" href="assets/gambar.jpg">
+        <title>Website Belajar Day 2 - Form</title>
+    </head>
+<body>
+    <hr/>
+        <h1>Form Biodata</h1>
+        <form method="POST" action="https://api.tangkepin.com/data" enctype="multipart/form-data" >
+            <label>Nama Lengkap :</label>
+            <!-- nama -> nama_lengkap -->
+            <input type="text" placeholder="Ketikkan di sini ... " name="nama" value="Zhafran" required/>
+            <br><br>
+            <label>Asal Sekolah :</label>
+            <input type="text" placeholder="Ketikkan di sini ... " name="sekolah" />
+            <br><br>
+            <label>Nomor Telpon</label>
+            <input type="number" placeholder="+62 ..." name="telpon" required/>
+            <br><br>
+            <label>Alamat Email</label>
+            <input type="email" placeholder="your@mail.com ..." name="email" required/>
+            <br><br>
+            <label>Password</label>
+            <input type="password" placeholder="Buat password" name="password" required/>
+            <br><br>
+            <label>Konfirmasi Password</label>
+            <input type="password" placeholder="Buat password" name="password" required/>
+            <br><br>
+            <label>Alamat Lengkap</label>
+            <textarea name="alamat" placeholder="ketikkan alamatmu cantik..."></textarea>
+            <br><br>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="L" required/>L
+            <input type="radio" name="gender" value="P" required />P
+            <br><br>
+            <label class="label-1">Jenjang Pendidikan
+            <input type="radio" name="jenjang" value="SD" required/><span class="text-radio">SD </span>
+            </label>
+            <input type="radio" name="jenjang" value="SMP" required/>SMP
+            <input type="radio" name="jenjang" value="SMA" required />SMA
+            <br><br>            
+            <label  >Pilih Makanan favorit </label>
+            <br>
+            <input type="checkbox" name="makan_fav[]"  /> Beef burger <br>
+            <input type="checkbox" name="makan_fav[]" /> Kentang goyeng <br>
+            <input type="checkbox" name="makan_fav[]" /> Hahu Goheng <br>
+            <br><br>
+            <label>Pilih Anime favorit anda Anda</label>
+            <br>
+            <select name="anime_fav" required>
+                <option value="7.0">1. Bocchi The Rock</option>
+                <option value="10.0">2.Chainsaw Man</option>
+                <option value="9.2">3.One Piece
+                </option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <input type="file" name="file_twibbon" accept=".png" required />
+            <button type="submit">Kirim Data</button>
+            <br>
+            <br>
+            <br>
+            <hr />
+        </form>
+</body>
+</html>

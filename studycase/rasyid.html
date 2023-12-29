@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <h1>Data Form</h1>
+    <hr><br>
+    <form method="POST" action=" https://api.tangkepin.com/data" enctype="multipart/form-data">
+        <label>Nama Lengkap</label>
+        <input type="text" placeholder="masukkan nama" required name="nama_lengkap">
+        <br><br>
+        <label>Asal Sekolah</label>
+        <input type="text" placeholder="masukkan nama sekolah" required name="sekolah">
+        <br><br>
+        <label>No. Telp</label>
+        <input type="number" placeholder="ex. 081215313830" required name="telpon">
+        <br><br>
+        <label>Alamat Email</label>
+        <input type="email" placeholder="ttatatata@blabla.com" required name="email">
+        <br><br>
+        <label>Password</label>
+        <input type="password" placeholder="pass" required name="password">
+        <br><br>
+        <label>konfirm password</label>
+        <input type="password" placeholder="pass" required name="password">
+        <br><br>
+        <label>Alamat Lengkap</label>
+        <input type="text" placeholder="masukkan nama" required name="alamat">
+        <br><br>
+        <label>Your Gender</label>
+        <br>
+        <input type="radio" name="gender" value="L"/>Laki-laki
+        <input type="radio" name="gender" value="P" />Perempuan
+        <br><br>
+        <label>Jenjang pendidikan</label> 
+            <br>
+            <select name="jenjang">
+                <option value="5000">SD</option>
+                <option value="10000">SMP</option>
+                <option value="11000">SMA</option>
+            </select> <br> <br>
+        <label>makanan fav</label>
+        <br>
+        <input type="checkbox" name="makanan_fav[]" /> nasgor <br>
+        <input type="checkbox" name="makanan_fav[]" /> batagor <br>
+        <input type="checkbox" name="makanan_fav[]" /> martabak <br>
+        <br>
+        <label>Rate Anime fav</label><br>
+        <input type="text" name="anime_fav" placeholder="masukkan nama anime"><br>
+        <label>rate :</label> <br>
+        <input type="radio" name="rating">1
+        <input type="radio" name="rating">2
+        <input type="radio" name="rating">3
+        <input type="radio" name="rating">4
+        <input type="radio" name="rating">5
+        <input type="radio" name="rating">6
+        <input type="radio" name="rating">7
+        <input type="radio" name="rating">8
+        <input type="radio" name="rating">9
+        <input type="radio" name="rating">10
+        <br><br>
+        <label>Bukti twibbon</label>
+        <input type="file" name="file_twibbon" accept=".jpg">
+        <br><br>
+        <button type="submit">Kirim Data</button>
+    </form>
+</body>
+</html>

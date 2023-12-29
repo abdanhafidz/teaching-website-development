@@ -26,6 +26,6 @@ metadata : {
     file_twibbon
 }
 
-Semua isian wajib diisi kecuali Asal Sekolah
+Semua isian wajib diisi kecuali Asal Sekolah dan Makanan Favorit Opsional
 
 Meta data akan dikirim ke sebuah handler beralamatkan https://api.tangkepin.com/data dengan method POST
