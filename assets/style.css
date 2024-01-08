@@ -19,7 +19,7 @@ h1{
 }
 
 .text-head{
-    color: C3E2C2;
+    color: #C3E2C2;
     font-size:1rem;
     font-family: 'Poppins', sans-serif;
     font-weight:500;
@@ -180,9 +180,18 @@ input[name="hobbi1"]{
 .subnavbar3{
     width:20%;
 }
-.nav-item{
+.nav-item-global{
     padding:10px;
     width:fit-content;
+}
+.nav-item-home{
+    font-size:12px;
+}
+.nav-item-about{
+    font-size:13px;
+}
+.nav-item-movie{
+    font-size:14px;
 }
 .nembus{
     z-index:0;
